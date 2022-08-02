@@ -16,7 +16,7 @@
 %	COLORS
 %----------------------------------------------------------------------------------------
 
-\usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
+\usepackage[usenames,dvipsnames]{xcolor}
 
 \definecolor{primary}{HTML}{2b2b2b} % The primary document color for content text
 \definecolor{headings}{HTML}{6A6A6A} % The color of the large sections
@@ -44,7 +44,7 @@
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
 \begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
-\color{date}\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
+\color{date}\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{8pt}{9pt}\selectfont % Text styling of the text
 Last Updated on \today % Last Updated text
 \end{textblock}}
 
@@ -79,16 +79,16 @@ Last Updated on \today % Last Updated text
 \color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{13pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{13pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 \newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{10pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{9.5pt}{11.5pt}\selectfont {#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
