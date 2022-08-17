@@ -88,7 +88,7 @@ Last Updated on \today % Last Updated text
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{10pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
-\color{headings}\raggedright\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{9.5pt}{11.5pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/avenir/]{Avenir-Book}\fontsize{9.5pt}{12pt}\selectfont {#1\\} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
