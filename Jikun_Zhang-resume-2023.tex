@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Template Author : Jake Gutierre
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\LARGE \scshape Zhang Jikun} \\ \vspace{1pt}
+    \small +65 9387 9897 $|$ \href{mailto:x@x.com}{\underline{zhangjikun907475@gmail.com}} $|$ 
+    \href{https://github.com/caando}{\underline{github.com/caando}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore}{August 2022 -- May 2025}
+      {Bachelor of Computing, Computer Science (with Honours)}{}
+    \resumeItemListStart
+        \resumeItem{GPA: 4.75, First Class Honours.}
+        \resumeItem{Distinction in Competitive Programming, Database Systems, Computer Organisation, Data Structures and Algorithms.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Open Government Products} $|$ {Software Engineer Intern}}{May 2023 -- August 2023}
+      \resumeItemListStart
+        \resumeItem{Improved selection logic of GitHub tokens for API calls to double efficiency of rate limits and improve ease to monitor.}
+        \resumeItem{Contributed features to Isomer such as preview images, last updated time and placeholder files.}
+        \resumeItem{Drafted a plan to migrate Isomer's git service provider and over 800 hosted site repositories from GitHub to GitLab.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeProjectHeading
+      {\textbf{Atom Assets Exchange} $|$ {Software Engineer Intern}}{January 2022 -- July 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a native gateway client with Boost.ASIO that communicates order book instructions in TCP protocol to London Stock Exchange Group’s matching engine service.}
+        \resumeItem{Developed a market data collection service with Boost.Beast that collects market data of other exchanges over websockets and stores it in Apache Parquet format.}
+        \resumeItem{Set up integration tests in GoogleTest framework for native gateway client and matching engine service.}
+        \resumeItem{Contributed to the development of a market maker that quotes at 1 tick spread for digital assets with highest trade volume.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+     \textbf{High Performance}{: C, C++, Make, CMake, Boost, ASIO, Beast, GoogleTest} \\
+     \textbf{Web}{: Typescript, Javascript, HTML, CSS, NodeJS, ExpressJS, ReactJS, JestJS, Axios, ChakraUI, Flask} \\
+     \textbf{Database}{: SQL, MySQL, PostgreSQL, SQLite, Sequelize} \\
+     \textbf{Modeling \& Analytics}{: Python, NumPy, Pandas, Matplotlib, sklearn, Jupyter Notebooks} \\
+     \textbf{Tools \& Misc}{: Git, GitHub, Docker, Amazon Web Services, \LaTeX} \\
+    }}
+ \end{itemize}
+
+%-----------Achievements-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ICPC Challenge} $|$ \emph{Algorithm/Heuristic Design Competition by Huawei}}{2023}
+          \resumeItemListStart
+            \resumeItem{Won Second Prize in Spring Online Challenge and achieved 26th place in onsite Challenge Championship with the problem Buffer Sharing(and Preallocation) for Multi-tenant Database Environment. }
+            \resumeItem{Designed a caching algorithm that greatly outperforms common cache replacement policies such as Least Recently Used. }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Ready Trader Go} $|$ \emph{Algorithmic Trading Competition by Optiver}}{March 2023}
+          \resumeItemListStart
+            \resumeItem{Reached top 16 by building an autotrader that reliably achieved profits and outperformed other autotraders.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Terminal} $|$ \emph{Strategic AI Programming Competition by Correlation One}}{August 2022}
+          \resumeItemListStart
+            \resumeItem{Declared champions in Summer Invitational for designing an AI in tower defense simulations that won all rounds in playoffs.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Competitive Programming Competitions} \emph{}}{2019 -- 2023}
+          \resumeItemListStart
+            \resumeItem{3rd in 2021 and 2nd in 2022 of Credit Suisse Global Coding Challenge, South-East Asia region.}
+            \resumeItem{2nd in CodeIt Suisse 2022 Singapore Team Category.}
+            \resumeItem{15th in Google Farewell round C 2023, 63rd in round D and 16th in round F of Google Kickstart.}
+            \resumeItem{319th in Meta Hacker Cup 2022, 125th in Quora Programming Challenge 2022 and Finalist in Shopee Code League.}
+            \resumeItem{Silver Medal in National Olympiad in Informatics 2019.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+ %-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Minerva Chess Engine} $|$ \emph{C/C++, CMake, GoogleTest}}{May 2023 -- August 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a chess engine that achieved approximately 2650 elo rating according to STS-rating test suites.}
+            \resumeItem{Implemented chess programming techniques such as bitboards representation, bitwise move generation, quiescence and negamax search, transposition table with Zobrist hashing. Integrated StockFish NNUE for evaluating leaf positions.}
+            \resumeItem{Incorporated telegram bot front-end open for users to play against.}
+            \resumeItem{Submitted under NUS Independent Software Development Project(Orbital) with level of achievement Apollo 11 (advanced).}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SGExams Website} $|$ \emph{Javascript, ExpressJS, ReactJS, PostgreSQL, AWS}}{January 2020 -- August 2023}
+          \resumeItemListStart
+            \resumeItem{Served as team lead of a group of volunteering student developers in building the \href{https://www.exams.sg}{www.exams.sg} website.}
+            \resumeItem{Notes repository with more than 20,000 registered users sharing and uploading their notes.}
+            \resumeItem{Platform for the organisation to publicise their programmes and initiatives.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Exam Timetable Generator} $|$ \emph{Python, NumPy, Pandas, Matplotlib, Flask}}{May 2019 -- September 2019}
+          \resumeItemListStart
+            \resumeItem{Utilised genetic algorithm to assign examination invigilation duties for teachers, reducing manual administrative work.}
+            \resumeItem{Deployed the functionalities on a web application with Python Flask.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
