@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resume/CV
+% Jikun Zhang
+%
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,hidelinks]{resume} % a4paper for A4 paper 
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\namesection{Jikun}{Zhang}{ % Your name
+
+\href{mailto:zhangjikun907475@gmail.com}{zhangjikun907475@gmail.com} % Email
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+Github:// \href{https://github.com/caando}{\bf caando} |
+LinkedIn:// \href{https://www.linkedin.com/in/zhang-jikun}{\bf zhang-jikun}
+
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.49\textwidth} % The left column takes up 33% of the text width of the page
+
+    %------------------------------------------------
+    % Education
+    %------------------------------------------------
+    
+    \section{Education}
+    
+    \sectionspace % Some whitespace after the section
+    
+    \subsection{National University of Singapore}
+    
+    \descript{Bachelor of Computing} {Computer Science (with Honours)} \\
+    \location{Aug 2022 - Jun 2025 (Expected)}
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+    %------------------------------------------------
+    % Skills
+    %------------------------------------------------
+    
+    \section{Skills}
+    
+    \sectionspace % Some whitespace after the section
+    
+    \descript{Low-Latency Programming}
+    
+    C \textbullet{} C++ \textbullet{} CMake/Make \textbullet{} Boost \textbullet{} ASIO \textbullet{} Beast \\
+    
+    \descript{Web Development}
+    
+    HTML \textbullet{} CSS \textbullet{} JavaScript \textbullet{} ExpressJS \textbullet{} ReactJS \\ \textbullet{} Python \textbullet{} Flask\\
+    
+    \descript{Database}
+    
+    SQL \textbullet{} MySQL \textbullet{} PostgreSQL \textbullet{} SQLite \\
+    
+    \descript{Competitive Programming}
+    Algorithms \textbullet{}Data Structures\\
+    
+    \descript{Miscellaneous Programming}
+    Tensorflow \textbullet{} Aeron \textbullet{} Apache Parquet \textbullet{} Unity \textbullet{}\LaTeX\ \\
+    
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+    %------------------------------------------------
+    % Awards
+    %------------------------------------------------
+    
+    \section{Awards \& Achievements} 
+    
+    \sectionspace % Some whitespace after the section
+    
+    \location{2023}
+
+    \begin{tabular}{p{0.55\linewidth} p{0\linewidth} l}
+        {ICPC 2023 Online Spring \linebreak Challenge powered by Huawei} & & 15\textsuperscript{th} \\
+        {Ready Trader Go} & & Finalist \\
+        Google Farewell Round C & & 15\textsuperscript{th} \\
+    \end{tabular}
+
+    
+    \sectionspace % Some whitespace after the section
+    
+    \location{2022}
+    
+    \begin{tabular}{p{0.55\linewidth} p{0\linewidth} l}
+        {CodeIt Suisse Singapore Team \linebreak Category} & & 2\textsuperscript{nd} \\
+        {Correlation One Terminal Summer Invitational Competition} & & 1\textsuperscript{st} \\
+        Shopee Code League & & Finalist \\
+        Quora Programming Challenge & & 125\textsuperscript{th} \\
+    \end{tabular}
+    \begin{tabular}{p{0.35\linewidth} p{0.20\linewidth} l}
+        Google Code Jam & Round 1/2 & Top 5\% \\
+        Meta Hacker Cup & Round 1/2/3 & 319 \textsuperscript{th}/27,604+ \\
+        Google Kickstart & Round A & 84\textsuperscript{th}/10,000+ \\
+        & Round D & 63 \textsuperscript{rd}/5,000+ \\
+        & Round F & 16 \textsuperscript{th}/5,000+ \\
+    \end{tabular}
+    
+    \sectionspace % Some whitespace after the section
+    
+    \location{2021}
+    
+    \begin{tabular}{p{0.55\linewidth} p{0\linewidth} l}
+        {Credit Suisse Global Coding \linebreak Challenge} & & 3\textsuperscript{rd} in Southeast Asia \\
+    \end{tabular}
+    \begin{tabular}{p{0.35\linewidth} p{0.20\linewidth} l}
+        Facebook Hacker Cup & Round 1/2 & Top 5 \% \\
+        Google Kickstart & Round E & 118\textsuperscript{th}/5,000+ \\
+    \end{tabular}
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+    \location{2019}
+    
+    \begin{tabular}{p{0.55\linewidth} p{0\linewidth} l}
+        National Olympiad in Informatics & & Silver Medalist \\
+        NUS Statistics Competition, Junior College Essay Category & & 1\textsuperscript{st} \\
+        Computing@SMU Award & & Award Recipient\\
+        Singapore Mathematical Olympiad Open Category & & Honourable Mention\\
+    \end{tabular}
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.50\textwidth} % The right column takes up 66% of the text width of the page
+
+    %------------------------------------------------
+    % Experience
+    %------------------------------------------------
+    
+    \section{Experience}
+    
+    \sectionspace % Some whitespace after the section
+
+    \subsection{Open Government Products}
+    \descript{Software Engineering Intern}
+    \location{May 2023 – Jul 2023}
+    
+    \sectionspace % Some whitespace after the section
+    
+    \subsection{Atom Asset Exchange Singapore}
+    \descript{Software Engineering Intern}
+    
+    \location{Jan 2022 – Jul 2022}
+    \textbullet{} Developed a native gateway client with Boost.ASIO that sends low latency TCP messages of execution instructions to London Stock Exchange Group’s matching engine service. \\
+    \textbullet{} Developed a market data collection service with Boost.Beast that collects market data of various cryptocurrency exchanges via websockets and stores it in Apache Parquet format. \\
+    \textbullet{} Set up integration tests using GoogleTest framework between risk management system, native gateway client and matching engine to ensure expected behaviour with a given configuration. \\
+    \textbullet{} Contributed to development and testing of a market maker to provide liquidity on the exchange, achieving the goal of reducing bid-ask spread of most traded assets to theoretical minimum of 1 tick.\\
+    \textbullet{} Researched and tested the performance of Aeron for messaging between multiple distributed system components within the exchange. \\
+    
+    \sectionspace % Some whitespace after the section
+    
+    %------------------------------------------------
+    
+    \subsection{Society of Student Affairs (SGExams)}
+    \descript{Full Stack Web Developer \& Team Lead (Volunteer)}
+    
+    \location{Jan 2020 – Current}
+    \textbullet{} Lead a team of volunteering student developers in development and delivery of software-related projects. \\
+    \textbullet{} The team built \href{https://exams.sg}{\bf https://exams.sg} website with ExpressJS server, ReactJS client and PostgreSQL database. \\
+    \textbullet{} Notes repository with more than 20,000 registered users sharing and uploading their notes. \\
+    \textbullet{} Platform for the organisation to publicise their programmes and initiatives. \\
+    
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+
+    %------------------------------------------------
+    % Projects
+    %------------------------------------------------
+    
+    \section{Projects}
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+    \subsection{Exam Timetable Generator}
+    \location{Sep 2019}
+    
+    Developed a web application with Python Flask which utilises genetic algorithm to assign examination invigilation duties for teachers, reducing the need for manual assignments.
+    
+    \sectionspace % Some whitespace after the section
+    
+    \subsection{Canteen food pre-ordering system}
+    \location{2017}
+
+    Developed a web application with Python Flask which allows students and staff members in River Valley High School to pre-order food from the canteen so as to cut down on queue time in during breaks.
+    
+    \sectionspace % Some whitespace after the section
+    %----------------------------------------------------------------------------------------
+    
+
+\end{minipage} % The end of the right column
+
+\end{document}
