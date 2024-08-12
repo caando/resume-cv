@@ -112,9 +112,9 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\LARGE \scshape Zhang Jikun} \\ \vspace{1pt}
-    \small +65 XXXX XXXX $|$ \href{mailto:x@x.com}{\underline{XXXXXXXXXXXXXXXX@gmail.com}} $|$ 
-    \href{https://github.com/caando}{\underline{github.com/caando}}
+  \textbf{\LARGE \scshape Zhang Jikun} \\ \vspace{1pt}
+  \small +65 XXXX XXXX $|$ \href{mailto:x@x.com}{\underline{XXXXXXXXXXXXXXXX@gmail.com}} $|$ 
+  \href{https://github.com/caando}{\underline{github.com/caando}}
 \end{center}
 
 
@@ -127,7 +127,7 @@
     \resumeItemListStart
         \resumeItem{First Class Honours.}
         \resumeItem{Distinction in Algorithms \& Theory, Parallel Computing, Database Systems and Programming Languages focus areas. }
-        \resumeItem{Integrating AI predictors in Sniper Multi-Core Simulator as Final Year Project. }
+        \resumeItem{Final Year Project - Integrating AI predictors in Sniper Multi-Core Simulator. }
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -139,7 +139,11 @@
     \resumeProjectHeading
       {\textbf{Optiver} $|$ {Software Engineer Intern}}{May 2024 -- August 2024}
       \resumeItemListStart
-        \resumeItem{C++ developer working on connectivity software.}
+        \resumeItem{C++ connectivity developer working on integrating Multi Commodity Exchange's market data and execution protocols.}
+        \resumeItem{Built an application that ingest sniffed packet capture data and output them in Apache parquet format. Used Boost.PFR's structure reflection features to programmatically generate parquet tables and columns based on serialized layout of protocol message types. Doing so greatly improved capabilities compared to previous implementations that hard-code each member.}
+        \resumeItem{Developed an application that reads sniffed packet capture data live, tracks order trade ratio and raises alarms when limit has been breached before any penalties are incurred.}
+        \resumeItem{Utilised ef\_vi API to publish UDP unicast packets to local vlan containing session keys so sniffing applications can pick up on it and decrypt the encrypted protocol data.}
+        \resumeItem{Designed the most profitable and overall best trading algorithm on a mock exchange with participants in training program.}
       \resumeItemListEnd
 
     \resumeProjectHeading
@@ -147,7 +151,6 @@
       \resumeItemListStart
         \resumeItem{Improved selection logic of GitHub tokens for API calls to double efficiency of rate limits and improve ease to monitor.}
         \resumeItem{Implemented features to Isomer such as preview images, last updated time and placeholder files.}
-        \resumeItem{Drafted a plan to migrate Isomer's git service provider and over 800 hosted site repositories from GitHub to GitLab.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -165,24 +168,9 @@
       \resumeItemListStart
         \resumeItem{Developed a native gateway client with Boost.ASIO that communicates execution data in TCP protocol to London Stock Exchange Group’s matching engine service.}
         \resumeItem{Developed a market data collection service with of exchanges over websockets and stores it in Apache Parquet format.}
-        \resumeItem{Set up integration tests with GoogleTest framework for native gateway client and matching engine service.}
-        \resumeItem{Contributed to the development of a market making strategy that quotes at 1 tick spread for high volume digital assets.}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \footnotesize{\item{
-     \textbf{High Performance}{: C, C++, Make, CMake, Boost, ASIO, Beast, GoogleTest} \\
-     \textbf{Web}{: TypeScript, JavaScript, HTML, CSS, NodeJS, ExpressJS, ReactJS, JestJS, Axios, ChakraUI, Flask} \\
-     \textbf{Database}{: SQL, MySQL, PostgreSQL, SQLite, Sequelize} \\
-     \textbf{Data Modeling \& Analytics}{: Python, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Tensorflow} \\
-     \textbf{Tools \& Misc}{: Git, Docker, Amazon Web Services, \LaTeX} \\
-    }}
- \end{itemize}
 
 %-----------Achievements-----------
 \section{Achievements}
@@ -204,11 +192,11 @@
             \resumeItem{Champions in Summer Invitational for designing an AI in tower defense simulations that won all rounds in playoffs.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Competitive Programming Competitions} \emph{}}{2021 -- 2023}
+          {\textbf{Competitive Programming} \emph{}}{2021 -- 2024}
           \resumeItemListStart
             \resumeItem{3rd in 2021 and 2nd in 2022 of Credit Suisse Global Coding Challenge, South-East Asia region.}
             \resumeItem{2nd in CodeIt Suisse 2022 Singapore Team Category.}
-            \resumeItem{15th in Google Farewell round C 2023, 63rd in round D and 16th in round F of Google Kickstart.}
+            % \resumeItem{15th in Google Farewell round C 2023, 63rd in round D and 16th in round F of Google Kickstart.}
             % \resumeItem{319th in Meta Hacker Cup 2022, 125th in Quora Programming Challenge 2022 and Finalist in Shopee Code League.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -230,14 +218,19 @@
             \resumeItem{Notes repository with more than 20,000 registered users sharing and uploading their notes.}
             \resumeItem{Platform for the organisation to publicise their programmes and initiatives.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Exam Timetable Generator} $|$ \emph{Python, NumPy, Pandas, Matplotlib, Flask}}{May 2019 -- September 2019}
-          \resumeItemListStart
-            \resumeItem{Utilised genetic algorithm to assign examination invigilation duties for teachers, reducing manual administrative work.}
-            \resumeItem{Deployed the functionalities on a web application with Python Flask.}
-          \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+     \textbf{High Performance}{: C, C++, Make, CMake, Boost, ASIO, Beast, GoogleTest} \\
+     \textbf{Web}{: TypeScript, JavaScript, HTML, CSS, NodeJS, ExpressJS, ReactJS, JestJS, Axios, ChakraUI, Flask} \\
+     \textbf{Database}{: SQL, MySQL, PostgreSQL, SQLite, Sequelize} \\
+     \textbf{Data Modeling \& Analytics}{: Python, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Tensorflow} \\
+     \textbf{Tools \& Misc}{: Git, Docker, Amazon Web Services, \LaTeX} \\
+    }}
+ \end{itemize}
 
 %-------------------------------------------
 \end{document}
