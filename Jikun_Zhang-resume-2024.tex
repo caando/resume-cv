@@ -125,9 +125,9 @@
       {National University of Singapore}{August 2022 -- May 2025}
       {Bachelor of Computing, Computer Science (with Honours)}{}
     \resumeItemListStart
-        \resumeItem{First Class Honours.}
+        \resumeItem{Graduating with First Class Honours (current GPA).}
         \resumeItem{Distinction in Algorithms \& Theory, Parallel Computing, Database Systems and Programming Languages focus areas. }
-        \resumeItem{Final Year Project - Integrating AI predictors in Sniper Multi-Core Simulator. }
+        \resumeItem{Final Year Project: Integrating AI predictors in Sniper Multi-Core Simulator. }
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -139,35 +139,25 @@
     \resumeProjectHeading
       {\textbf{Optiver} $|$ {Software Engineer Intern}}{May 2024 -- August 2024}
       \resumeItemListStart
-        \resumeItem{C++ connectivity developer working on integrating Multi Commodity Exchange's market data and execution protocols.}
-        \resumeItem{Built an application that ingest sniffed packet capture data and output them in Apache parquet format. Used Boost.PFR's structure reflection features to programmatically generate parquet tables and columns based on serialized layout of protocol message types. Doing so greatly improved capabilities compared to previous implementations that hard-code each member.}
-        \resumeItem{Developed an application that reads sniffed packet capture data live, tracks order trade ratio and raises alarms when limit has been breached before any penalties are incurred.}
-        \resumeItem{Utilised ef\_vi API to publish UDP unicast packets to local vlan containing session keys so sniffing applications can pick up on it and decrypt the encrypted protocol data.}
-        \resumeItem{Designed the most profitable and overall best trading algorithm on a mock exchange with participants in training program.}
+        \resumeItem{Contributed to exchange connectivity applications as part of the core team.}
+        \resumeItem{Built an application to ingest sniffed packet capture data and output it in Apache Parquet format. Used Boost.PFR’s structure reflection to generate table columns, significantly improving flexibility over previous hard-coded implementations.}
+        \resumeItem{Developed a real-time application to track order trade ratio for Multi Commodity Exchange and raise alarms when limits are breached, preventing penalties.}
+        \resumeItem{Utilized AMD Onload's ef\_vi API to publish UDP unicast packets containing session keys to a local VLAN for decryption of encrypted protocol data by sniffing applications.}
+        \resumeItem{Designed the most profitable trading algorithm in a mock exchange, outperforming peers during a training program.}
       \resumeItemListEnd
 
     \resumeProjectHeading
       {\textbf{Open Government Products} $|$ {Software Engineer Intern}}{May 2023 -- August 2023}
       \resumeItemListStart
-        \resumeItem{Improved selection logic of GitHub tokens for API calls to double efficiency of rate limits and improve ease to monitor.}
-        \resumeItem{Implemented features to Isomer such as preview images, last updated time and placeholder files.}
+        \resumeItem{Optimized GitHub token selection logic, doubling API rate limit efficiency and simplifying monitoring processes.}
+        \resumeItem{Enhanced the Isomer platform by implementing preview images, last updated timestamps, and placeholder files, improving user experience.}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeProjectHeading
       {\textbf{Atom Assets Exchange} $|$ {Software Engineer Intern}}{January 2022 -- July 2022}
       \resumeItemListStart
-        \resumeItem{Developed a native gateway client with Boost.ASIO that communicates execution data in TCP protocol to London Stock Exchange Group’s matching engine service.}
-        \resumeItem{Developed a market data collection service with of exchanges over websockets and stores it in Apache Parquet format.}
+      \resumeItem{Engineered a TCP-based native gateway client with Boost.ASIO for real-time communication with the London Stock Exchange’s matching engine.}
+      \resumeItem{Developed a market data collection service of cryptocurrency exchanges and stores it in Apache Parquet format.}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -178,14 +168,13 @@
       \resumeProjectHeading
           {\textbf{ICPC Challenge} $|$ \emph{Algorithm/Heuristic Design Competition by Huawei}}{2023}
           \resumeItemListStart
-            \resumeItem{Won Second Prize in Spring Online Challenge and achieved 26th place in onsite Challenge Championship with the problem Buffer Sharing(and Preallocation) for Multi-tenant Database Environment. }
-            \resumeItem{Designed a caching algorithm that greatly outperforms common cache replacement policies such as Least Recently Used. }
+            \resumeItem{Second Prize in Spring Online Challenge and 26th place in the onsite Challenge Championship.}
+            \resumeItem{Designed a cache replacement heuristic that reduced cache misses by 20\% compared to standard policies like LRU.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Ready Trader Go} $|$ \emph{Algorithmic Trading Competition by Optiver}}{March 2023}
           \resumeItemListStart
-            \resumeItem{Reached top 16 by building an autotrader that reliably achieved profits and outperformed other autotraders.}
-          \resumeItemListEnd
+          \resumeItem{Reached top 16 by developing an autotrader that consistently generated profits and outperformed competitors.}          \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Terminal} $|$ \emph{Strategic AI Programming Competition by Correlation One}}{August 2022}
           \resumeItemListStart
@@ -196,8 +185,8 @@
           \resumeItemListStart
             \resumeItem{3rd in 2021 and 2nd in 2022 of Credit Suisse Global Coding Challenge, South-East Asia region.}
             \resumeItem{2nd in CodeIt Suisse 2022 Singapore Team Category.}
-            % \resumeItem{15th in Google Farewell round C 2023, 63rd in round D and 16th in round F of Google Kickstart.}
-            % \resumeItem{319th in Meta Hacker Cup 2022, 125th in Quora Programming Challenge 2022 and Finalist in Shopee Code League.}
+            \resumeItem{15th in Google Farewell round C 2023, 63rd in round D and 16th in round F of Google Kickstart.}
+            \resumeItem{319th in Meta Hacker Cup 2022, 125th in Quora Programming Challenge 2022 and Finalist in Shopee Code League.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -207,27 +196,24 @@
       \resumeProjectHeading
           {\textbf{Minerva Chess Engine} $|$ \emph{C/C++, CMake, GoogleTest}}{May 2023 -- August 2023}
           \resumeItemListStart
-            \resumeItem{Developed a chess engine that achieved approximately 2650 elo rating according to STS-rating test suites.}
-            \resumeItem{Implemented chess programming techniques such as bitboards representation, bitwise move generation, quiescence and negamax search, transposition table with Zobrist hashing. Integrated StockFish NNUE for evaluating leaf nodes.}
-            \resumeItem{Incorporated telegram bot front-end open for users to play against.}
+            \resumeItem{Created a chess engine with an estimated 2650 Elo rating, using chess programming techniques like bitboards, transposition tables, quiescence and negamax search. Integrated StockFish NNUE for evaluating leaf nodes in search tree.}
+            \resumeItem{Developed a Telegram bot interface, allowing users to play against the engine in real-time.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{SGExams Website} $|$ \emph{Javascript, ExpressJS, ReactJS, PostgreSQL, AWS}}{January 2020 -- August 2023}
           \resumeItemListStart
-            \resumeItem{Served as team lead of a group of volunteering student developers in building the \href{https://www.exams.sg}{www.exams.sg} website.}
-            \resumeItem{Notes repository with more than 20,000 registered users sharing and uploading their notes.}
-            \resumeItem{Platform for the organisation to publicise their programmes and initiatives.}
+            \resumeItem{Led a team of volunteer developers to build \href{https://www.exams.sg}{www.exams.sg}, a platform with over 20,000 users sharing educational resources.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \footnotesize{\item{
-     \textbf{High Performance}{: C, C++, Make, CMake, Boost, ASIO, Beast, GoogleTest} \\
-     \textbf{Web}{: TypeScript, JavaScript, HTML, CSS, NodeJS, ExpressJS, ReactJS, JestJS, Axios, ChakraUI, Flask} \\
-     \textbf{Database}{: SQL, MySQL, PostgreSQL, SQLite, Sequelize} \\
-     \textbf{Data Modeling \& Analytics}{: Python, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, Tensorflow} \\
+     \textbf{High Performance Computing}{: C, C++, Make, CMake, Boost, ASIO, GoogleTest} \\
+     \textbf{Web Development}{: TypeScript, JavaScript, HTML, CSS, NodeJS, ExpressJS, ReactJS, JestJS, Axios, ChakraUI, Flask} \\
+     \textbf{Databases}{: SQL, MySQL, PostgreSQL, SQLite, Sequelize} \\
+     \textbf{Data Analytics \& Machine Learning}{: Python, NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch, TensorFlow} \\
      \textbf{Tools \& Misc}{: Git, Docker, Amazon Web Services, \LaTeX} \\
     }}
  \end{itemize}
